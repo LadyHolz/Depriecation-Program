@@ -1,0 +1,16 @@
+#10% loss in value every year loop
+# the value will fall until it fall below £1000
+#inital value is £3000 in this example 
+
+Currentvalue = int(input("Enter the value of your motorbike!  "))
+soldprice = float(Currentvalue)
+depriecation = (10 / 100 ) * soldprice
+newvalue = soldprice - depriecation
+
+
+def function():
+    print("Year one your motorbike will lose", depriecation, "your new value is", newvalue)
+function()
+
+Enter the value of your motorbike!   3000
+Year one your motorbike will lose 300.0 your new value is 2700.0
